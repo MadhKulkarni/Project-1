@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Decentralized Supply Chain Tracking Web Application</title>
+</head>
+
+<body>
+   
+
+
+
+    <div id="app">
+        <header>
+            <h1>Decentralized Supply Chain Tracking Web Application</h1>
+        </header>
+
+        <style>
+            #auth-buttons {
+                position: absolute;
+                top: 10px;
+                right: 10px; 
+            
+            }
+    
+            #auth-buttons button {
+                margin-left: 10px; 
+            }
+        </style>
+
+        <div id="auth-buttons">
+            <button onclick="redirectTo('signup.html')">Sign Up</button>
+            <button onclick="redirectTo('login.html')">Login</button>
+        </div>
+        <main>
+            <section id="supplier-list">
+
+
+                <!-- Supplier list will be displayed here -->
+            </section>
+            <button id="btnpending">Pending</button>
+            <button id="btndelivered">Delivered</button>
+        </main>
+           
+        </div>
+        
+
+    </div>
+
+
+    
+
+    <!-- Feedback form modal -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeFeedbackModal()">&times;</span>
+            <h2>Leave Feedback</h2>
+            <label for="feedbackText">Feedback:</label>
+            <textarea id="feedbackText" rows="4"></textarea>
+            <button onclick="submitFeedback()">Submit</button>
+        </div>
+    </div>
+
+    <script  src="index.js"></script>
+
+    <script>
+        // Function to redirect to a given page
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

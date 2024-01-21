@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>signup</title>
+
+<style>
+
+body {
+    margin: 10px; 
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+header, form {
+    padding: 15px;
+    background-color: #5dade2;
+    margin: 30px auto;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    color: #333;
+}
+
+form {
+    padding: 15px; 
+    margin: 0 auto;
+}
+
+#email, #password {
+    display: block;
+    margin: 8px auto;
+    padding: 10px; 
+    width: calc(100% - 20px);
+    font-size: 14px; 
+    border: 2px solid #3498db; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#email {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 24px;
+    font-size: 14px;
+    background-color: #3498db; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<header><h2>Web Application</h2></header>
+
+<form id="signup">
+<h3>signup:</h3>
+<br>
+
+<label for="email">Email:</label><br>
+
+<input type="email" name="email" id="email"><br><br>
+
+<label for="password">Password:</label><br>
+
+<input type="password" name="password" id="password"><br><br>
+
+<button type="submit" name="signup" id="signupbutton">Submit</button>
+<p id="login">already have an account?<a href="login.html">login</a></p>
+</form> 
+
+<script type="module" src="signup.js">
+
+</script>
+
+</body>
+
+</html>
